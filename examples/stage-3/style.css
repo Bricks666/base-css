@@ -1,0 +1,39 @@
+.body {
+	font-family: "Roboto", sans-serif;
+}
+
+.header__heading {
+	font-size: 64px;
+}
+
+.header__author {
+	font-size: 36px;
+}
+
+.main__part {
+	font-size: 48px;
+	font-weight: 500;
+}
+
+.chapter__name {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.chapter__paragraph {
+	font-size: 18px;
+}
+
+.nav__link {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.footer__copyright {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.footer__contacts {
+	font-size: 18px;
+}

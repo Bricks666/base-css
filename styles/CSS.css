@@ -1,0 +1,33 @@
+.c1 {
+	color: tomato;
+
+	font-size: 1.2em;
+}
+
+.s1 {
+	display: inline-block;
+
+	color: greenyellow;
+
+	transform: rotate(145deg);
+}
+
+.s2 {
+	display: inline-block;
+
+	color: plum;
+
+	animation-name: spin;
+	animation-timing-function: ease-in-out;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(1080deg);
+	}
+}
