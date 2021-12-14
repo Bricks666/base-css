@@ -60,9 +60,18 @@
 
 .example {
 	font-size: 16px;
-	font-family: serif;
+	font-family: "Roboto", sans-serif;
 
 	border: 1px solid black;
+}
+
+.example--serif {
+	font-family: serif;
+}
+
+.example__selector1 {
+	background-color: tomato;
+	color: plum;
 }
 
 .words {

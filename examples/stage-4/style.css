@@ -1,0 +1,50 @@
+.body {
+	font-family: "Roboto", sans-serif;
+}
+.header {
+	background-color: #1c1b1b;
+}
+
+.header__heading {
+	font-size: 64px;
+}
+
+.header__author {
+	font-size: 36px;
+}
+
+.main__part {
+	font-size: 48px;
+	font-weight: 500;
+}
+
+.chapter__name {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.chapter__paragraph {
+	font-size: 18px;
+}
+
+.chapter__highlight {
+	background-color: #1c1b1b;
+}
+
+.nav__link {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.footer {
+	background-color: #1c1b1b;
+}
+
+.footer__copyright {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.footer__contacts {
+	font-size: 18px;
+}
