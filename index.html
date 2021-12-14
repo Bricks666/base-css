@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Shower Presentation Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="node_modules/@shower/ribbon/styles/styles.css"
+		/>
+		<link rel="stylesheet" href="./styles/index.css" />
+	</head>
+	<body class="shower list">
+		<header class="caption">
+			<h1>Веб дизайн. Эпизод 4. Надежда на красоту</h1>
+			<p>Давным давно, в далеком далеком</p>
+		</header>
+
+		<!-- JS to trash -->
+		<section class="slide slide1">
+			<h2 id="slide1-header" class="slide1__header">
+				По ваши просьбам некоторых ваших товарищей, его Великий и Могучий
+				<span id="js" draggable="true">JavaScript</span>
+			</h2>
+			<img
+				id="trash"
+				class="image slide1__image--trash"
+				src="./assets/trash.jpg"
+			/>
+			<img id="photo" class="image slide1__image--js" src="./assets/js.jpg" />
+			<img
+				id="box"
+				class="image slide1__image--box"
+				draggable="true"
+				src="./assets/box.jpg"
+			/>
+			<span id="css" class="slide1__css">CSS</span>
+		</section>
+		<!-- Web wars -->
+		<section class="slide black clear">
+			<img
+				class="slide2__photo"
+				src="./assets/star-wars.jpg"
+				alt="Веб дизайн. Эпизод 4. Надежда на красоту"
+			/>
+		</section>
+		<!-- Sandbox example -->
+		<section class="slide column column--two slide-with-sandbox">
+			<h2 class="column__header">Так-с, что то я устал от Times'а</h2>
+			<div class="code-sandbox">
+				<pre class="pre code-sandbox__pre">
+          <code class="code">.selector {</code>
+          <code class="code code-sandbox__code" data-example="paddings">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+          <code class="code code-sandbox__code" data-example="paddings">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+          <code class="code code-sandbox__code" data-example="paddings">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+          <code class="code code-sandbox__code" data-example="paddings">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+          <code class="code">}</code>
+        </pre>
+				<div class="dropzone code-sandbox__words words" data-type="all">
+					<span
+						class="draggable words__word"
+						draggable="true"
+						data-type="selector"
+						>padding:</span
+					><span
+						class="draggable words__word"
+						draggable="true"
+						data-type="value"
+						>15px</span
+					>
+					<span
+						class="draggable words__word"
+						draggable="true"
+						data-type="selector"
+						>padding-left:</span
+					><span
+						class="draggable words__word"
+						draggable="true"
+						data-type="value"
+						>10px</span
+					>
+					<span
+						class="draggable words__word"
+						draggable="true"
+						data-type="selector"
+						>padding-right:</span
+					><span
+						class="draggable words__word"
+						draggable="true"
+						data-type="value"
+						>15px</span
+					>
+					<span
+						class="draggable words__word"
+						draggable="true"
+						data-type="selector"
+						>padding-top:</span
+					><span
+						class="draggable words__word"
+						draggable="true"
+						data-type="value"
+						>15px</span
+					>
+					<span
+						class="draggable words__word"
+						draggable="true"
+						data-type="selector"
+						>padding-bottom:</span
+					><span
+						class="draggable words__word"
+						draggable="true"
+						data-type="value"
+						>15px</span
+					>
+				</div>
+			</div>
+			<div class="slide-with-sandbox__example example" data-name="paddings">
+				<div style="background-color: aqua; width: 100%; height: 100%"></div>
+			</div>
+		</section>
+		<!-- Some about CSS -->
+		<section class="slide">
+			<h2>
+				Вкратце о <span class="c1">C</span><span class="s1">S</span
+				><span class="s2">S</span>
+			</h2>
+			<ol>
+				<li class="next">CSS - каскадная таблица стилей</li>
+				<li class="next">Первые стандарты внедрили в 1996 году</li>
+				<li class="next">Сейчас актуален третий стандарт</li>
+			</ol>
+		</section>
+		<!-- What do we need for css -->
+		<section class="slide column column--two">
+			<h2 class="column__header">Зачем нужен</h2>
+			<img
+				class="image next"
+				src="./assets/Youtube/youtube.jpg"
+				alt="Стандартный Ютуб"
+			/>
+			<img
+				class="image next"
+				src="./assets/Youtube/youtube-without-css.png"
+				alt="Ютуб без CSS"
+			/>
+		</section>
+		<!-- What we'll be doing -->
+		<section class="slide column column--two">
+			<h2 class="column__header">Что мы сегодня делаем</h2>
+			<img
+				class="image image--no-cover"
+				src="./assets/Maket/Maket-1.jpg"
+				alt="Фото макета. Часть 1"
+			/>
+			<img
+				class="image image--no-cover"
+				src="./assets/Maket/Maket-2.jpg"
+				alt="Фото макета. Часть 2"
+			/>
+		</section>
+		<!-- Some closer -->
+		<section class="slide column">
+			<h2 class="column__header">Рассмотрим чуть поближе</h2>
+		</section>
+		<!-- Header -->
+		<section class="slide column column--two">
+			<h2 class="column__header">Шапка</h2>
+			<pre class="pre">
+        <code>  &lt;body&gt;</code>
+        <code>    &lt;header&gt;</code>
+        <code>      &lt;h1&gt;...&lt;/h1&gt;</code>
+        <code>      &lt;p&gt;...&lt;/p&gt;</code>
+        <code>    &lt;/header&gt;</code>
+      </pre>
+			<img class="image image--no-cover" src="./assets/Maket/header.jpg" />
+		</section>
+		<!-- Content. Block1 -->
+		<section class="slide column column--two">
+			<h2 class="column__header">Певая часть основного контента</h2>
+			<pre class="pre">
+        <code>    &lt;main&gt;</code>
+        <code>      &lt;h2&gt;...&lt;/h2&gt;</code>
+        <code>      &lt;h3&gt;...&lt;/h3&gt;</code>
+        <code>      &lt;section&gt;</code>
+        <code>        &lt;img&gt;</code>
+        <code>        &lt;p&gt;...&lt;/p&gt;</code>
+        <code>        ...</code>
+        <code>        &lt;p&gt;...&lt;/p&gt;</code>
+      </pre>
+			<img class="image image--no-cover" src="./assets/Maket/content-1.jpg" />
+		</section>
+		<!-- Content. Block2 -->
+		<section class="slide column column--two">
+			<h2 class="column__header">Вторая часть основного контента</h2>
+			<pre class="pre">
+        <code>        &lt;div&gt;</code>
+        <code>          &lt;p&gt;...&lt;/p&gt;</code>
+        <code>          ...</code>
+        <code>          &lt;p&gt;...&lt;/p&gt;</code>
+        <code>        &lt;/div&gt;</code>
+      </pre>
+			<img class="image image--no-cover" src="./assets/Maket/content-2.jpg" />
+		</section>
+		<!-- Content. Block3 -->
+		<section class="slide column column--two">
+			<h2 class="column__header">Третья часть основного контента</h2>
+			<pre class="pre">
+        <code>        &lt;p&gt;...&lt;/p&gt;</code>
+        <code>        ...</code>
+        <code>        &lt;p&gt;...&lt;/p&gt;</code>
+        <code>      &lt;/section&gt;</code>
+        <code>      &lt;nav&gt;</code>
+        <code>        &lt;ul&gt;</code>
+        <code>          &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;</code>
+        <code>          ...</code>
+        <code>          &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;</code>
+        <code>        &lt;/ul&gt;</code>
+        <code>      &lt;/nav&gt;</code>
+        <code>    &lt;/main&gt;</code>
+      </pre>
+			<img class="image image--no-cover" src="./assets/Maket/content-3.jpg" />
+		</section>
+		<!-- Footer -->
+		<section class="slide column column--two">
+			<h2 class="column__header">Подвал</h2>
+			<pre class="pre">
+        <code>    &lt;footer&gt;</code>
+        <code>      &lt;p&gt;...&lt;/p&gt;</code>
+        <code>      ...</code>
+        <code>      &lt;p&gt;...&lt;/p&gt;</code>
+        <code>    &lt;/footer&gt;</code>
+        <code>  &lt;/body&gt;</code>
+      </pre>
+			<img class="image image--no-cover" src="./assets/Maket/footer.jpg" />
+		</section>
+		<!-- How it looks -->
+		<section class="slide slide-with-inner clear">
+			<object
+				class="inner-site"
+				data="./examples/without-style/index.html"
+			></object>
+		</section>
+		<!-- Change font family example -->
+		<section class="slide column column--two slide-with-sandbox">
+			<h2 class="column__header">Меняем шрифт</h2>
+			<div class="code-sandbox">
+				<pre class="pre code-sandbox__pre">
+          <code class="code">.selector {</code>
+          <code class="code code-sandbox__code" data-example="font-family">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+          <code class="code">}</code>
+        </pre>
+				<div class="dropzone code-sandbox__words words" data-type="all">
+					<span
+						class="draggable words__word"
+						draggable="true"
+						data-type="selector"
+						>font-family:</span
+					><span
+						class="draggable words__word"
+						draggable="true"
+						data-type="value"
+						>serif</span
+					>
+					<span class="draggable words__word" draggable="true" data-type="value"
+						>sans-serif</span
+					>
+					<span class="draggable words__word" draggable="true" data-type="value"
+						>monospace</span
+					>
+					<span class="draggable words__word" draggable="true" data-type="value"
+						>fantasy</span
+					>
+				</div>
+			</div>
+			<div class="slide-with-sandbox__example example">
+				<p data-name="font-family">
+					Не уходи смиренно в сумрак вечной тьмы<br />
+					Пусть тлеет бесконечность заревом заката<br />
+					Пылает гнев на то, как гаснет смертный мир<br />
+					И мудрецы твердят, что прав лишь тьмы покой<br />
+					И не разжечь уж тлеющий костер Не уходи смиренно в сумрак вечной
+					тьмы<br />
+					Пылает гнев на то, как гаснет смертный мир<br />
+				</p>
+			</div>
+		</section>
+		<!-- Set another font and add fallback -->
+		<section class="slide column column--two slide-with-sandbox">
+			<h2 class="column__header">Меняем шрифт</h2>
+			<div class="code-sandbox">
+				<pre class="pre code-sandbox__pre">
+          <code class="code">.selector {</code>
+          <code class="code code-sandbox__code" data-example="font-and-fallbacks">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+          <code class="code">}</code>
+        </pre>
+				<div class="dropzone code-sandbox__words words" data-type="all">
+					<span
+						class="draggable words__word"
+						draggable="true"
+						data-type="selector"
+						>font-family:</span
+					><span
+						class="draggable words__word"
+						draggable="true"
+						data-type="value"
+						>'Roboto'</span
+					>
+					<span class="draggable words__word" draggable="true" data-type="value"
+						>'Robot'</span
+					>
+					<span class="draggable words__word" draggable="true" data-type="value"
+						>'Robot', sans-serif</span
+					>
+				</div>
+			</div>
+			<div class="slide-with-sandbox__example example">
+				<p data-name="font-and-fallbacks">
+					Не уходи смиренно в сумрак вечной тьмы<br />
+					Пусть тлеет бесконечность заревом заката<br />
+					Пылает гнев на то, как гаснет смертный мир<br />
+					И мудрецы твердят, что прав лишь тьмы покой<br />
+					И не разжечь уж тлеющий костер Не уходи смиренно в сумрак вечной
+					тьмы<br />
+					Пылает гнев на то, как гаснет смертный мир<br />
+				</p>
+			</div>
+		</section>
+
+		<div class="progress"></div>
+
+		<script src="node_modules/@shower/core/dist/shower.js"></script>
+		<script src="./scripts/Draggable.js"></script>
+		<script src="./scripts/Dropzone.js"></script>
+		<script src="./scripts/CodeChange.js"></script>
+		<script src="./scripts/DND.js"></script>
+		<script src="./scripts/jsToTrash.js"></script>
+	</body>
+</html>
