@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Shower Presentation Engine</title>
+		<title>Веб дизайн. Эпизод 4. Надежда на красоту</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
 			rel="stylesheet"
-			href="shower/themes/ribbon/styles/styles.css"
+			href="node_modules/@shower/ribbon/styles/styles.css"
 		/>
 		<link rel="stylesheet" href="./styles/index.css" />
 	</head>
@@ -22,83 +22,92 @@
 				По ваши просьбам некоторых ваших товарищей, его Великий и Могучий
 				<span id="js" draggable="true">JavaScript</span>
 			</h2>
-			<img
-				id="trash"
-				class="image slide1__image--trash"
-				src="./assets/trash.jpg"
-			/>
+			<img id="trash"
+				 class="image slide1__image--trash"
+				 src="./assets/trash.jpg" />
 			<img id="photo" class="image slide1__image--js" src="./assets/js.jpg" />
-			<img
-				id="box"
-				class="image slide1__image--box"
-				draggable="true"
-				src="./assets/box.jpg"
-			/>
+			<img id="box"
+				 class="image slide1__image--box"
+				 draggable="true"
+				 src="./assets/box.jpg" />
 			<span id="css" class="slide1__css">CSS</span>
 		</section>
 		<!-- Web wars -->
-		<section class="slide black clear">
-			<img
-				class="slide2__photo"
-				src="./assets/star-wars.jpg"
-				alt="Веб дизайн. Эпизод 4. Надежда на красоту"
-			/>
+		<section class="slide black clear" style="padding-top: 0;">
+			<img class="slide2__photo"
+				 src="./assets/star-wars.jpg"
+				 alt="Веб дизайн. Эпизод 4. Надежда на красоту" />
 		</section>
 		<!-- Some about CSS -->
 		<section class="slide">
 			<h2>
-				Вкратце о <span class="c1">C</span><span class="s1">S</span
-				><span class="s2">S</span>
+				Вкратце о <span class="c1">C</span><span class="s1">S</span><span class="s2">S</span>
 			</h2>
 			<ol>
 				<li class="next">CSS - каскадная таблица стилей</li>
 				<li class="next">Первые стандарты внедрили в 1996 году</li>
 				<li class="next">Сейчас актуален третий стандарт</li>
+				<li class="next">Формат файлов .css</li>
 			</ol>
+		</section>
+		<!-- How it work-->
+		<section class="slide column column--two">
+			<h2 class="column__header">Как это работает</h2>
+			<pre class="pre">
+			<code>div {</code>
+			<code>...</code>
+			<code>}</code>
+			<code>.class {</code>
+			<code>...</code>
+			<code>}</code>
+			<code>#id {</code>
+			<code>...</code>
+			<code>}</code>
+			</pre>
+			<pre class="pre">
+			<code>&lt;div&gt;</code>
+			<code>&lt;/div&gt;</code>
+			<code>&lt;p class="class"&gt;</code>
+			<code>&lt;/p&gt;</code>
+			<code>&lt;h2 id="id"&gt;</code>
+			<code>&lt;/h2&gt;</code>
+			</pre>
 		</section>
 		<!-- What do we need for css -->
 		<section class="slide column column--two">
 			<h2 class="column__header">Зачем нужен</h2>
-			<img
-				class="image next"
-				src="./assets/Youtube/youtube.jpg"
-				alt="Стандартный Ютуб"
-			/>
-			<img
-				class="image next"
-				src="./assets/Youtube/youtube-without-css.png"
-				alt="Ютуб без CSS"
-			/>
+			<img class="image next"
+				 src="./assets/Youtube/youtube.jpg"
+				 alt="Стандартный Ютуб" />
+			<img class="image next"
+				 src="./assets/Youtube/youtube-without-css.png"
+				 alt="Ютуб без CSS" />
 		</section>
 		<!-- What we'll be doing -->
 		<section class="slide column column--two">
 			<h2 class="column__header">Что мы сегодня делаем</h2>
-			<img
-				class="image image--no-cover"
-				src="./assets/Maket/Maket-1.jpg"
-				alt="Фото макета. Часть 1"
-			/>
-			<img
-				class="image image--no-cover"
-				src="./assets/Maket/Maket-2.jpg"
-				alt="Фото макета. Часть 2"
-			/>
+			<img class="image image--no-cover"
+				 src="./assets/Maket/Maket-1.jpg"
+				 alt="Фото макета. Часть 1" />
+			<img class="image image--no-cover"
+				 src="./assets/Maket/Maket-2.jpg"
+				 alt="Фото макета. Часть 2" />
 		</section>
 		<!-- Some closer -->
-		<section class="slide column">
-			<h2 class="column__header">Рассмотрим чуть поближе</h2>
+		<section class="slide">
+			<h2 class="shout" style="font-size: 64px;">Рассмотрим чуть поближе</h2>
 		</section>
 		<!-- Header -->
 		<section class="slide column column--two">
 			<h2 class="column__header">Шапка</h2>
 			<pre class="pre">
-        <code>  &lt;body&gt;</code>
-        <code>    &lt;header&gt;</code>
-        <code>      &lt;div&gt;</code>
-        <code>        &lt;h1&gt;...&lt;/h1&gt;</code>
-        <code>        &lt;p&gt;...&lt;/p&gt;</code>
-        <code>      &lt;/div&gt;</code>
-        <code>    &lt;/header&gt;</code>
+			<code>  &lt;body&gt;</code>
+			<code>    &lt;header&gt;</code>
+			<code>      &lt;div&gt;</code>
+			<code>        &lt;h1&gt;...&lt;/h1&gt;</code>
+			<code>        &lt;p&gt;...&lt;/p&gt;</code>
+			<code>      &lt;/div&gt;</code>
+			<code>    &lt;/header&gt;</code>
       </pre>
 			<img class="image image--no-cover" src="./assets/Maket/header.jpg" />
 		</section>
@@ -106,15 +115,15 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Певая часть основного контента</h2>
 			<pre class="pre">
-        <code>    &lt;main&gt;</code>
-        <code>      &lt;div&gt;</code>
-        <code>        &lt;h2&gt;...&lt;/h2&gt;</code>
-        <code>        &lt;h3&gt;...&lt;/h3&gt;</code>
-        <code>        &lt;section&gt;</code>
-        <code>          &lt;img&gt;</code>
-        <code>          &lt;p&gt;...&lt;/p&gt;</code>
-        <code>          ...</code>
-        <code>          &lt;p&gt;...&lt;/p&gt;</code>
+			<code>    &lt;main&gt;</code>
+			<code>      &lt;div&gt;</code>
+			<code>        &lt;h2&gt;...&lt;/h2&gt;</code>
+			<code>        &lt;h3&gt;...&lt;/h3&gt;</code>
+			<code>        &lt;section&gt;</code>
+			<code>          &lt;img&gt;</code>
+			<code>          &lt;p&gt;...&lt;/p&gt;</code>
+			<code>          ...</code>
+			<code>          &lt;p&gt;...&lt;/p&gt;</code>
       </pre>
 			<img class="image image--no-cover" src="./assets/Maket/content-1.jpg" />
 		</section>
@@ -122,11 +131,11 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Вторая часть основного контента</h2>
 			<pre class="pre">
-        <code>        &lt;div&gt;</code>
-        <code>          &lt;p&gt;...&lt;/p&gt;</code>
-        <code>          ...</code>
-        <code>          &lt;p&gt;...&lt;/p&gt;</code>
-        <code>        &lt;/div&gt;</code>
+			<code>        &lt;div&gt;</code>
+			<code>          &lt;p&gt;...&lt;/p&gt;</code>
+			<code>          ...</code>
+			<code>          &lt;p&gt;...&lt;/p&gt;</code>
+			<code>        &lt;/div&gt;</code>
       </pre>
 			<img class="image image--no-cover" src="./assets/Maket/content-2.jpg" />
 		</section>
@@ -134,19 +143,19 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Третья часть основного контента</h2>
 			<pre class="pre">
-        <code>          &lt;p&gt;...&lt;/p&gt;</code>
-        <code>          ...</code>
-        <code>          &lt;p&gt;...&lt;/p&gt;</code>
-        <code>        &lt;/section&gt;</code>
-        <code>        &lt;nav&gt;</code>
-        <code>          &lt;ul&gt;</code>
-        <code>            &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;</code>
-        <code>            ...</code>
-        <code>            &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;</code>
-        <code>          &lt;/ul&gt;</code>
-        <code>        &lt;/nav&gt;</code>
-        <code>      &lt;/div&gt;</code>
-        <code>    &lt;/main&gt;</code>
+			<code>          &lt;p&gt;...&lt;/p&gt;</code>
+			<code>          ...</code>
+			<code>          &lt;p&gt;...&lt;/p&gt;</code>
+			<code>        &lt;/section&gt;</code>
+			<code>        &lt;nav&gt;</code>
+			<code>          &lt;ul&gt;</code>
+			<code>            &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;</code>
+			<code>            ...</code>
+			<code>            &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;</code>
+			<code>          &lt;/ul&gt;</code>
+			<code>        &lt;/nav&gt;</code>
+			<code>      &lt;/div&gt;</code>
+			<code>    &lt;/main&gt;</code>
       </pre>
 			<img class="image image--no-cover" src="./assets/Maket/content-3.jpg" />
 		</section>
@@ -154,14 +163,14 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Подвал</h2>
 			<pre class="pre">
-        <code>    &lt;footer&gt;</code>
-        <code>      &lt;div&gt;</code>
-        <code>        &lt;p&gt;...&lt;/p&gt;</code>
-        <code>        ...</code>
-        <code>        &lt;p&gt;...&lt;/p&gt;</code>
-        <code>      &lt;div&gt;</code>
-        <code>    &lt;/footer&gt;</code>
-        <code>  &lt;/body&gt;</code>
+			<code>    &lt;footer&gt;</code>
+			<code>      &lt;div&gt;</code>
+			<code>        &lt;p&gt;...&lt;/p&gt;</code>
+			<code>        ...</code>
+			<code>        &lt;p&gt;...&lt;/p&gt;</code>
+			<code>      &lt;div&gt;</code>
+			<code>    &lt;/footer&gt;</code>
+			<code>  &lt;/body&gt;</code>
       </pre>
 			<img class="image image--no-cover" src="./assets/Maket/footer.jpg" />
 		</section>
@@ -174,31 +183,19 @@
 			<h2 class="column__header">Меняем шрифт</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="font-family">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="font-family">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>font-family:</span
-					><span
-						class="draggable words__word"
-						draggable="true"
-						data-type="value"
-						>serif</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>sans-serif</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>monospace</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>fantasy</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">font-family:</span><span class="draggable words__word"
+															draggable="true"
+															data-type="value">serif</span>
+					<span class="draggable words__word" draggable="true" data-type="value">sans-serif</span>
+					<span class="draggable words__word" draggable="true" data-type="value">monospace</span>
+					<span class="draggable words__word" draggable="true" data-type="value">fantasy</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example example--serif">
@@ -218,28 +215,18 @@
 			<h2 class="column__header">Меняем шрифт</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="font-and-fallbacks">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="font-and-fallbacks">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>font-family:</span
-					><span
-						class="draggable words__word"
-						draggable="true"
-						data-type="value"
-						>'Roboto'</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>'Robot'</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>'Robot', sans-serif</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">font-family:</span><span class="draggable words__word"
+															draggable="true"
+															data-type="value">'Roboto'</span>
+					<span class="draggable words__word" draggable="true" data-type="value">'Robot'</span>
+					<span class="draggable words__word" draggable="true" data-type="value">'Robot', sans-serif</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example example--serif">
@@ -258,9 +245,9 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Изменим шрифт на нашем проекте</h2>
 			<pre class="pre">
-        <code>.body {</code>
-        <code>  <mark>font-family: 'Roboto', sans-serif;</mark></code>
-        <code>}</code>
+			<code>.body {</code>
+			<code>  <mark>font-family: 'Roboto', sans-serif;</mark></code>
+			<code>}</code>
       </pre>
 			<img class="image" src="./assets/screenproofs/font-family.jpg" />
 		</section>
@@ -273,31 +260,19 @@
 			<h2 class="column__header">Теперь меняем размер</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="font-size">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="font-size">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>font-size:</span
-					><span
-						class="draggable words__word"
-						draggable="true"
-						data-type="value"
-						>14px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>1rem</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>2em</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>25mm</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">font-size:</span><span class="draggable words__word"
+														  draggable="true"
+														  data-type="value">14px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">1rem</span>
+					<span class="draggable words__word" draggable="true" data-type="value">2em</span>
+					<span class="draggable words__word" draggable="true" data-type="value">25mm</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -316,51 +291,51 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Изменим размер шрифта</h2>
 			<pre class="pre column column--two">
-        <div>
-          <code>.header__heading {</code>
-            <code> <mark>font-size: 64px;</mark></code>
-            <code>}</code>
+			<div>
+			<code>.header__heading {</code>
+			<code> <mark>font-size: 64px;</mark></code>
+			<code>}</code>
         </div>
-        <div>
-          <code>.header__author {</code>
-          <code> <mark>font-size: 36px;</mark></code>
-          <code>}</code>
-        </div>
-
-        <div>
-          <code>.main__part {</code>
-          <code> <mark>font-size: 48px;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.header__author {</code>
+			<code> <mark>font-size: 36px;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.chapter__name {</code>
-          <code> <mark>font-size: 24px;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.main__part {</code>
+			<code> <mark>font-size: 48px;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.chapter__paragraph {</code>
-          <code> <mark>font-size: 18px;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.chapter__name {</code>
+			<code> <mark>font-size: 24px;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.nav__link {</code>
-          <code> <mark>font-size: 24px;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.chapter__paragraph {</code>
+			<code> <mark>font-size: 18px;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.footer__copyright {</code>
-          <code> <mark>font-size: 18px;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.nav__link {</code>
+			<code> <mark>font-size: 24px;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.footer__contacts {</code>
-          <code> <mark>font-size: 18px;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.footer__copyright {</code>
+			<code> <mark>font-size: 18px;</mark></code>
+			<code>}</code>
+        </div>
+
+			<div>
+			<code>.footer__contacts {</code>
+			<code> <mark>font-size: 18px;</mark></code>
+			<code>}</code>
         </div>
 
       </pre>
@@ -375,31 +350,19 @@
 			<h2 class="column__header">Что ж, шрифту пора худеть</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="font-weight">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="font-weight">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>font-weight:</span
-					><span
-						class="draggable words__word"
-						draggable="true"
-						data-type="value"
-						>normal</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>300</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>light</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>700</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">font-weight:</span><span class="draggable words__word"
+															draggable="true"
+															data-type="value">normal</span>
+					<span class="draggable words__word" draggable="true" data-type="value">300</span>
+					<span class="draggable words__word" draggable="true" data-type="value">light</span>
+					<span class="draggable words__word" draggable="true" data-type="value">700</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -418,32 +381,32 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Изменим ширины шрифта</h2>
 			<pre class="pre column column--two">
-        <div>
-          <code>.main__part {</code>
-          <code>  font-size: 48px;</code>
-          <code>  <mark>font-weight: 500;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.main__part {</code>
+			<code>  font-size: 48px;</code>
+			<code>  <mark>font-weight: 500;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.chapter__name {</code>
-          <code>  font-size: 24px;</code>
-          <code>  <mark>font-weight: 500;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.chapter__name {</code>
+			<code>  font-size: 24px;</code>
+			<code>  <mark>font-weight: 500;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.nav__link {</code>
-          <code>  font-size: 24px;</code>
-          <code>  <mark>font-weight: 700;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.nav__link {</code>
+			<code>  font-size: 24px;</code>
+			<code>  <mark>font-weight: 700;</mark></code>
+			<code>}</code>
         </div>
 
-        <div>
-          <code>.footer__copyright {</code>
-          <code>  font-size: 18px;</code>
-          <code>  <mark>font-weight: 500;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.footer__copyright {</code>
+			<code>  font-size: 18px;</code>
+			<code>  <mark>font-weight: 500;</mark></code>
+			<code>}</code>
         </div>
 
 
@@ -459,51 +422,37 @@
 			<h2 class="column__header">В городе наступает ночь</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="background-color">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="background-color">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>background-color:</span
-					><span
-						class="draggable words__word"
-						draggable="true"
-						data-type="value"
-						>tomato</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>rgb(152, 16, 23)</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>rgba(100, 37, 12, 0.8)</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>#fab142</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">background-color:</span><span class="draggable words__word"
+																 draggable="true"
+																 data-type="value">tomato</span>
+					<span class="draggable words__word" draggable="true" data-type="value">rgb(152, 16, 23)</span>
+					<span class="draggable words__word" draggable="true" data-type="value">rgba(100, 37, 12, 0.8)</span>
+					<span class="draggable words__word" draggable="true" data-type="value">#fab142</span>
 				</div>
 			</div>
-			<div
-				class="slide-with-sandbox__example example"
-				data-name="background-color"
-			></div>
+			<div class="slide-with-sandbox__example example"
+				 data-name="background-color"></div>
 		</section>
 		<!-- Change background color on example -->
 		<section class="slide column column--two">
 			<h2 class="column__header">Изменим фона в нашем проекте</h2>
 			<pre class="pre">
-        <code>.header {</code>
-        <code><mark>background-color: #1c1b1b</mark></code>
-        <code>}</code>
-        <code>.chapter__highlighter {</code>
-        <code><mark>background-color: #1c1b1b</mark></code>
-        <code>}</code>
-        <code>.footer {</code>
-        <code><mark>background-color: #1c1b1b</mark></code>
-        <code>}</code>
+			<code>.header {</code>
+			<code><mark>background-color: #1c1b1b</mark></code>
+			<code>}</code>
+			<code>.chapter__highlighter {</code>
+			<code><mark>background-color: #1c1b1b</mark></code>
+			<code>}</code>
+			<code>.footer {</code>
+			<code><mark>background-color: #1c1b1b</mark></code>
+			<code>}</code>
       </pre>
 			<img class="image" src="./assets/screenproofs/background-color.jpg" />
 		</section>
@@ -516,31 +465,19 @@
 			<h2 class="column__header">Пора использовать пасту лакалют</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="color">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="color">  <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>color:</span
-					><span
-						class="draggable words__word"
-						draggable="true"
-						data-type="value"
-						>tomato</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>rgb(152, 16, 23)</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>rgba(100, 37, 12, 0.8)</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>#fab142</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">color:</span><span class="draggable words__word"
+													  draggable="true"
+													  data-type="value">tomato</span>
+					<span class="draggable words__word" draggable="true" data-type="value">rgb(152, 16, 23)</span>
+					<span class="draggable words__word" draggable="true" data-type="value">rgba(100, 37, 12, 0.8)</span>
+					<span class="draggable words__word" draggable="true" data-type="value">#fab142</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -559,30 +496,30 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Достаем маленькие кисточки</h2>
 			<pre class="pre column column--two">
-        <div>
-          <code>.header__heading {</code>
-          <code>  font-size: 64px;</code>
-          <code>  <mark>color: white;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.header__heading {</code>
+			<code>  font-size: 64px;</code>
+			<code>  <mark>color: white;</mark></code>
+			<code>}</code>
         </div>
-        <div>
-          <code>.header__author {</code>
-          <code>  font-size: 36px;</code>
-          <code>  <mark>color: white;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.header__author {</code>
+			<code>  font-size: 36px;</code>
+			<code>  <mark>color: white;</mark></code>
+			<code>}</code>
         </div>
-        <div>
-          <code>.footer__copyright {</code>
-          <code>  font-size: 18px;</code>
-          <code>  font-weight: 500;</code>
-          <code>  <mark>color: white;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.footer__copyright {</code>
+			<code>  font-size: 18px;</code>
+			<code>  font-weight: 500;</code>
+			<code>  <mark>color: white;</mark></code>
+			<code>}</code>
         </div>
-        <div>
-          <code>.footer__contacts {</code>
-          <code>  font-size: 18px;</code>
-          <code>  <mark>color: white;</mark></code>
-          <code>}</code>
+			<div>
+			<code>.footer__contacts {</code>
+			<code>  font-size: 18px;</code>
+			<code>  <mark>color: white;</mark></code>
+			<code>}</code>
         </div>
       </pre>
 			<img class="image" src="./assets/screenproofs/color.jpg" />
@@ -595,19 +532,19 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Как использовать каскад</h2>
 			<pre class="pre">
-        <code class="code">.selector1 {</code>
-        <code class="code">  background-color: tomato;</code>
-        <code class="code">  color: plum;</code>
-        <code class="code">}</code>
-        <code class="code">.selector2 {</code>
-        <code class="code">  background-color: violet;</code>
-        <code class="code">}</code>
+			<code class="code">.selector1 {</code>
+			<code class="code">  background-color: tomato;</code>
+			<code class="code">  color: plum;</code>
+			<code class="code">}</code>
+			<code class="code">.selector2 {</code>
+			<code class="code">  background-color: violet;</code>
+			<code class="code">}</code>
       </pre>
 			<pre class="pre">
-        <code>...</code>
-        <code>&lt;div class="selector1 selector2"&gt;</code>
-        <code>...</code>
-        <code>&lt;/div&gt;</code>
+			<code>...</code>
+			<code>&lt;div class="selector1 selector2"&gt;</code>
+			<code>...</code>
+			<code>&lt;/div&gt;</code>
       </pre>
 		</section>
 		<!-- How work cascade -->
@@ -615,40 +552,26 @@
 			<h2 class="column__header">Как он работает</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector1 {</code>
-            <code class="code">  background-color: tomato;</code>
-            <code class="code">  color: plum;</code>
-            <code class="code">}</code>
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="cascade"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="cascade"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector1 {</code>
+				<code class="code">  background-color: tomato;</code>
+				<code class="code">  color: plum;</code>
+				<code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="cascade"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="cascade"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>color:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>background-color:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>tomato</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>rgb(152, 16, 23)</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>rgba(100, 37, 12, 0.8)</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>#fab142</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">color:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">background-color:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">tomato</span>
+					<span class="draggable words__word" draggable="true" data-type="value">rgb(152, 16, 23)</span>
+					<span class="draggable words__word" draggable="true" data-type="value">rgba(100, 37, 12, 0.8)</span>
+					<span class="draggable words__word" draggable="true" data-type="value">#fab142</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -667,16 +590,16 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Добавляем каскадный класс</h2>
 			<pre class="pre">
-        <code>.chapter__paragraph--invert {</code>
-        <code>  <mark>color: white;</mark></code>
-        <code>}</code>
+			<code>.chapter__paragraph--invert {</code>
+			<code>  <mark>color: white;</mark></code>
+			<code>}</code>
       </pre>
 			<pre class="pre">
-        <code>...</code>
-        <code>&lt;p class="chapter__paragraph
+			<code>...</code>
+			<code>&lt;p class="chapter__paragraph
           chapter__paragraph--invert"&gt;</code>
-        <code>...</code>
-        <code>&lt;/p&gt;</code>
+			<code>...</code>
+			<code>&lt;/p&gt;</code>
       </pre>
 		</section>
 		<!-- How it looks -->
@@ -688,50 +611,30 @@
 			<h2 class="column__header">Внешние отступы</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="margins"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>margin-left:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>margin-right:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>margin-top:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>margin-bottom:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>10px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>5px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>7px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>16px</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">margin-left:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">margin-right:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">margin-top:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">margin-bottom:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">10px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">5px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">7px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">16px</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -751,29 +654,18 @@
 			<h2 class="column__header">Одно свойство - 4 отступа</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="margin"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="margin"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>margin:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>10px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>5px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>7px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>16px</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">margin:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">10px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">5px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">7px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">16px</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -792,9 +684,9 @@
 		<section class="slide">
 			<h2>Избавление от стандартных внешних отступов</h2>
 			<pre class="pre">
-        <code><mark>body, p, ul, h1, h2, h3</mark> {</code>
-        <code>  <mark>margin: 0;</mark></code>
-        <code>}</code>
+			<code><mark>body, p, ul, h1, h2, h3</mark> {</code>
+			<code>  <mark>margin: 0;</mark></code>
+			<code>}</code>
       </pre>
 		</section>
 		<!-- How it looks -->
@@ -806,36 +698,22 @@
 			<h2 class="column__header">Указание ширины и высоты</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="width-height"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="width-height"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="width-height"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="width-height"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>width:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>height:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>120px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>auto</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>50%</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>0</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">width:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">height:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">120px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">auto</span>
+					<span class="draggable words__word" draggable="true" data-type="value">50%</span>
+					<span class="draggable words__word" draggable="true" data-type="value">0</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -855,31 +733,22 @@
 			<h2 class="column__header">Выравнивание элемента по горизонтали</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="margin-center"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="margin-center"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>margin:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>0</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>auto</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">margin:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">0</span>
+					<span class="draggable words__word" draggable="true" data-type="value">auto</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
-				<p
-					class="example__selector1"
-					style="width: 50%"
-					data-name="margin-center"
-				>
+				<p class="example__selector1"
+				   style="width: 50%"
+				   data-name="margin-center">
 					Не уходи смиренно в сумрак вечной тьмы<br />
 					Пусть тлеет бесконечность заревом заката<br />
 					Пылает гнев на то, как гаснет смертный мир<br />
@@ -894,10 +763,10 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Добавление выравнивания по центру страницы</h2>
 			<pre class="pre">
-        <code>.container {</code>
-        <code>  <mark>margin: 0 auto;</mark></code>
-        <code>  <mark>width: 1440px;</mark></code>
-        <code>}</code>
+			<code>.container {</code>
+			<code>  <mark>margin: 0 auto;</mark></code>
+			<code>  <mark>width: 1440px;</mark></code>
+			<code>}</code>
       </pre>
 			<img src="./assets/screenproofs/align-center.jpg" alt="width" />
 		</section>
@@ -909,18 +778,18 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Добавление внешних отступов</h2>
 			<pre class="pre">
-        <code>.chapter__paragraph {</code>
-        <code>  font-size: 18px;</code>
-        <code> <mark>margin-bottom: 12px;</mark></code>
-        <code>}</code>
-        <code>.header {</code>
-        <code>  background-color: #1c1b1b;</code>
-        <code> <mark>margin-bottom: 50px;</mark></code>
-        <code>}</code>
-        <code>.footer {</code>
-        <code>  background-color: #1c1b1b;</code>
-        <code> <mark>margin-top: 72px;</mark></code>
-        <code>}</code>
+			<code>.chapter__paragraph {</code>
+			<code>  font-size: 18px;</code>
+			<code> <mark>margin-bottom: 12px;</mark></code>
+			<code>}</code>
+			<code>.header {</code>
+			<code>  background-color: #1c1b1b;</code>
+			<code> <mark>margin-bottom: 50px;</mark></code>
+			<code>}</code>
+			<code>.footer {</code>
+			<code>  background-color: #1c1b1b;</code>
+			<code> <mark>margin-top: 72px;</mark></code>
+			<code>}</code>
       </pre>
 			<img src="./assets/screenproofs/margin.jpg" />
 		</section>
@@ -934,29 +803,18 @@
 			<h2 class="column__header">Выравнивание текста</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="text-center"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="text-center"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>text-align:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>center</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>justify</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>start</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>end</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">text-align:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">center</span>
+					<span class="draggable words__word" draggable="true" data-type="value">justify</span>
+					<span class="draggable words__word" draggable="true" data-type="value">start</span>
+					<span class="draggable words__word" draggable="true" data-type="value">end</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -975,17 +833,17 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Выравниваем текст</h2>
 			<pre class="pre">
-        <code>.chapter__paragraph {</code>
-        <code>  font-size: 18px;</code>
-        <code>  margin-bottom: 12px;</code>
-        <code>  <mark>text-align: justify;</mark></code>
-        <code>}</code>
-        <code>.header__author {</code>
-        <code>  margin-right: 82px;</code>
-	      <code>  font-size: 36px;</code>
-	      <code>  color: white;</code>
-        <code>  <mark>text-align:end;</mark></code>
-        <code>}</code>
+			<code>.chapter__paragraph {</code>
+			<code>  font-size: 18px;</code>
+			<code>  margin-bottom: 12px;</code>
+			<code>  <mark>text-align: justify;</mark></code>
+			<code>}</code>
+			<code>.header__author {</code>
+			<code>  margin-right: 82px;</code>
+			<code>  font-size: 36px;</code>
+			<code>  color: white;</code>
+			<code>  <mark>text-align:end;</mark></code>
+			<code>}</code>
       </pre>
 			<img src="./assets/screenproofs/margin.jpg" />
 		</section>
@@ -999,50 +857,30 @@
 			<h2 class="column__header">Внутренние отступы отступы</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code code-sandbox__code" data-example="paddings"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>padding-left:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>padding-right:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>padding-top:</span
-					>
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>padding-bottom:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>10px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>5px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>7px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>16px</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">padding-left:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">padding-right:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">padding-top:</span>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">padding-bottom:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">10px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">5px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">7px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">16px</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -1062,29 +900,18 @@
 			<h2 class="column__header">Одно свойство - 4 отступа</h2>
 			<div class="code-sandbox">
 				<pre class="pre code-sandbox__pre">
-          <code class="code">.selector {</code>
-          <code class="code code-sandbox__code" data-example="padding"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
-          <code class="code">}</code>
+				<code class="code">.selector {</code>
+				<code class="code code-sandbox__code" data-example="padding"> <span class="dropzone code-sandbox__dropzone" data-type="selector"></span><span class="dropzone code-sandbox__dropzone" data-type="value"></span></code>
+				<code class="code">}</code>
         </pre>
 				<div class="dropzone code-sandbox__words words" data-type="all">
-					<span
-						class="draggable words__word"
-						draggable="true"
-						data-type="selector"
-						>padding:</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>10px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>5px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>7px</span
-					>
-					<span class="draggable words__word" draggable="true" data-type="value"
-						>16px</span
-					>
+					<span class="draggable words__word"
+						  draggable="true"
+						  data-type="selector">padding:</span>
+					<span class="draggable words__word" draggable="true" data-type="value">10px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">5px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">7px</span>
+					<span class="draggable words__word" draggable="true" data-type="value">16px</span>
 				</div>
 			</div>
 			<div class="slide-with-sandbox__example example">
@@ -1103,10 +930,10 @@
 		<section class="slide">
 			<h2>Избавление от стандартных внутренних отступов</h2>
 			<pre class="pre">
-        <code><mark>body, p, ul, h1, h2, h3</mark> {</code>
-        <code>  margin: 0;</code>
-        <code>  <mark>padding: 0;</mark></code>
-        <code>}</code>
+			<code><mark>body, p, ul, h1, h2, h3</mark> {</code>
+			<code>  margin: 0;</code>
+			<code>  <mark>padding: 0;</mark></code>
+			<code>}</code>
       </pre>
 		</section>
 		<!-- How it looks -->
@@ -1118,17 +945,17 @@
 		<section class="slide column column--two">
 			<h2 class="column__header">Добавление внутренних отступов</h2>
 			<pre class="pre">
-        <code>.header {</code>
-        <code>  margin-bottom: 50px;</code>
-        <code>  background-color: #1c1b1b;</code>
-        <code>  <mark>padding-top: 130px;</mark></code>
-        <code>  <mark>padding-bottom: 69px;</mark></code>
-        <code>}</code>
-        <code>.footer {</code>
-        <code>  background-color: #1c1b1b;</code>
-        <code>  margin-top: 72px;</code>
-        <code>  padding: 44px 65px 200px;</code>
-        <code>}</code>
+			<code>.header {</code>
+			<code>  margin-bottom: 50px;</code>
+			<code>  background-color: #1c1b1b;</code>
+			<code>  <mark>padding-top: 130px;</mark></code>
+			<code>  <mark>padding-bottom: 69px;</mark></code>
+			<code>}</code>
+			<code>.footer {</code>
+			<code>  background-color: #1c1b1b;</code>
+			<code>  margin-top: 72px;</code>
+			<code>  padding: 44px 65px 200px;</code>
+			<code>}</code>
       </pre>
 			<img src="./assets/screenproofs/margin.jpg" />
 		</section>
@@ -1140,11 +967,10 @@
 		<section class="slide">
 			<h2>Конец первой части</h2>
 			<a href="./examples/stage-11/index.html">Промежуточный документ</a>
+			<a href="https://clck.ru/ZLBNg">Ссылка на макет(другой)</a>
 		</section>
 		<section class="slide">
-			<a href="https://clck.ru/ZLBNg" style="font-size: 74px" class="shout"
-				>https://clck.ru/ZLBNg</a
-			>
+			<a href="https://clck.ru/ZLPbV" style="font-size: 74px" class="shout">https://clck.ru/ZLPbV</a>
 		</section>
 
 		<div class="progress"></div>
